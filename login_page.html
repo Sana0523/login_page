@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/login_page.css">
+  <title>login.com</title>
+</head>
+<body>
+  <video autoplay muted loop class="background-video">
+      <source src="videos/27018-361798566_small.mp4" type="video/mp4">
+  </video>
+  <div class="outer">
+      <div class="container">
+        <div class="login_">
+          <div>
+            <p class="login">LOGIN</p>
+          </div>
+          <div>
+            <p class="content">
+              Please enter user information
+            </p>
+          </div>
+          <form action="login.php" method="POST">
+            <div class="user">
+              <div style="display: inline;">
+                <img class="icon" src="images/usericon.png" alt="usericon">
+              </div>
+              <div class="a" style="display: inline;">
+                <input class="u" type="text" placeholder="Username">  
+              </div>
+            </div>
+            <div class="password">
+              <div style="display: inline;">
+                <img class="icon" src="images/password_icon.jpg" alt="password">
+              </div>
+              <div class="a">
+                <input class="u" type="password" placeholder="Password">
+              </div>
+            </div>
+            <div class="forgot">
+              <p>Forgot password?</p>
+            </div>
+            <button type="submit" class="login_b">Login</button>
+          </form>
+          <p>Don't have an account? <a href="#" id="switchToSignup">Sign up</a></p>
+        </div>
+        <div class="sign_up">
+          <div>
+            <p class="sign_in">Sign Up</p>
+          </div>
+          <form action="signup.php" method="POST">
+            <div class="user" style="margin-top: 12px;">
+              <div style="display: inline;">
+                <img class="icon" src="images/usericon.png" alt="usericon">
+              </div>
+              <div class="a" style="display: inline;">
+                <input class="u" type="text" placeholder="Username">
+              </div>
+            </div>
+            <div class="user" style="margin-top: 22px;
+            margin-bottom: 12px;">
+              <div style="display: inline;">
+                <img class="icon" src="images/email_icon.png" alt="emailicon">
+              </div>
+              <div class="a" style="display: inline;">
+                <input class="u" type="email" placeholder="Email id">
+              </div>
+            </div>
+            <div class="password" style="margin-top: 22px;
+                                        margin-bottom: 12px;">
+              <div style="display: inline;">
+                <img class="icon" src="images/password_icon.jpg" alt="password">
+              </div>
+              <div class="a">
+                <input class="u" type="password" placeholder="Password">
+              </div>
+            </div>
+            <button type="submit" class="login_b" style="margin-top: 12px;">Sign up</button>
+          </form>
+          <p>Already have an account? <a href="#" id="switchToLogin">Login</a></p>
+        </div>
+      </div>
+    </div>
+    <script src="slider.js"></script>
+</body>
+</html>
